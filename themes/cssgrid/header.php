@@ -57,19 +57,19 @@
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18C14.866 18 18 14.866 18 11C18 7.13401 14.866 4 11 4ZM2 11C2 6.02944 6.02944 2 11 2C15.9706 2 20 6.02944 20 11C20 15.9706 15.9706 20 11 20C6.02944 20 2 15.9706 2 11Z" fill="white" />
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9429 15.9429C16.3334 15.5524 16.9666 15.5524 17.3571 15.9429L21.7071 20.2929C22.0977 20.6834 22.0977 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L15.9429 17.3571C15.5524 16.9666 15.5524 16.3334 15.9429 15.9429Z" fill="white" />
 						</svg>
-
 					</div>
+				</div>
 
 
 
 			</header><!-- #masthead -->
 			<div class="sidebar">
-				<div>
+				<div class="sidebar-right-bar">
 					<img class="sidebar-shoe" src="<?php echo get_template_directory_uri() ?>/images/shoe1_icon_1.png" alt="shoe">
 					<h3 class="sidebar-text">What’s On your feet today?</h3>
-					<img class="sidebar-arrow" src="<?php echo get_template_directory_uri() ?>/images/arrow_icon_1.png" alt="shoe">
+					<img id="sidebar-toggle" class="sidebar-arrow" src="<?php echo get_template_directory_uri() ?>/images/arrow_icon_open.png" alt="shoe">
 				</div>
-				<div id="collapse" class="collapse-form" >
+				<div id="collapse" class="collapse-form">
 					<div id="close-side-form" class="side-close" style="position: relative; padding-top: 37px; float: right; padding-right: 49px;">close X</div>
 					<div class="align-center" style="padding-top: 87px; padding-left: 20px;">
 						<img class="marginx-auto" src="<?php echo get_template_directory_uri() ?>/images/sneaker-tracker-logo_black-1.png" alt="Sneaker Tracker logo">

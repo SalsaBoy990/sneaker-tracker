@@ -275,10 +275,23 @@ header form[role="search"] {
   display: inline; }
 
 .sidebar {
-  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   right: 0;
+  width: 119px;
+  height: 973px; }
+
+.sidebar-open {
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 832px;
+  height: 973px; }
+
+.sidebar-right-bar {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
   width: 119px;
   height: 973px; }
 
@@ -381,6 +394,7 @@ h3.sidebar-text {
   right: 37px; }
 
 .sidebar-arrow {
+  cursor: pointer;
   position: absolute;
   bottom: 48px;
   left: 46px;
@@ -442,6 +456,7 @@ form.side > input[type="button"] {
   color: #ffffff; }
 
 .side-close {
+  cursor: pointer;
   font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -503,15 +518,11 @@ form.side > input[type="button"] {
 
 .collapse-form {
   margin-left: 119px;
-  margin-top: -66px;
   display: none;
   left: 119px;
   width: 713px;
   height: 977px;
   background: #fff; }
-
-.collapse-form-hide {
-  display: none; }
 
 /* Global styles, margins, paddings */
 .ml15px {

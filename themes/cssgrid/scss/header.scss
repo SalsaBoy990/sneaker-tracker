@@ -58,12 +58,27 @@ header form[role="search"] {
 }
 
 .sidebar {
-  background: $dark-bg;
   position: absolute;
   top: 0;
   right: 0;
   width: 119px;
   height: 973px;
+}
+.sidebar-open {
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 832px;
+  height: 973px;
+}
+
+.sidebar-right-bar {
+  background: $dark-bg;
+  position: absolute;
+  width: 119px;
+  height: 973px;
+
 }
 
 h3.sidebar-text {
@@ -179,6 +194,7 @@ h3.sidebar-text {
 }
 
 .sidebar-arrow {
+  cursor: pointer;
   position: absolute;
   bottom: 48px;
   left: 46px;
@@ -246,6 +262,7 @@ form.side > input[type="button"] {
 }
 
 .side-close {
+  cursor: pointer;
   font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -312,16 +329,11 @@ form.side > input[type="button"] {
 }
 
 .collapse-form {
-  
   margin-left: 119px;
-  margin-top: -66px;
+  // margin-top: -66px;
   display: none;
   left: 119px;
   width: 713px;
   height: 977px;
   background: #fff;
-}
-
-.collapse-form-hide {
-  display: none;
 }

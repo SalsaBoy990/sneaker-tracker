@@ -2,18 +2,28 @@
   var closeBtn = document.getElementById('close-side-form');
   console.log(closeBtn);
   closeBtn.addEventListener("click", function () {
-    var collapsable = document.querySelector('.collapse-form');
+    var sidebar = document.querySelector('.sidebar');
+    var collapse = document.querySelector('.collapse-form');
     // console.log(collapsable);
-
-    collapsable.style.display = 'none';
+    sidebar.style.width = "119px";
+    collapse.style.display = 'none';
   });
 
   var openBtn = document.querySelector('.sidebar-arrow');
   openBtn.addEventListener("click", function () {
-    var collapsable = document.querySelector('.collapse-form');
-    // console.log(collapsable);
-    collapsable.style.display = 'block';
-    collapsable.style.right = "-832px";
+    var sidebar = document.querySelector('.sidebar');
+    var collapse = document.querySelector('.collapse-form');
+
+    if (collapse.style.display !== 'block') {
+       sidebar.style.width = "832px";
+       collapse.style.display = 'block';
+       openBtn.src="http://sneaker-tracker.test/wp-content/themes/cssgrid/images/arrow_icon_close.png"
+      } else if (collapse.style.display === 'block') {
+        sidebar.style.width = "119px";
+        collapse.style.display = 'none';
+        openBtn.src="http://sneaker-tracker.test/wp-content/themes/cssgrid/images/arrow_icon_open.png"
+    }
+
   });
 
   
