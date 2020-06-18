@@ -1,0 +1,16 @@
+/* Header, hero section */
+.container-max-width {
+  max-width: 1920px;
+}
+
+.hero-size {
+  min-height: 977px;
+  max-width: 1920px;
+}
+.hero-bg {
+  background: url('hero-1.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+

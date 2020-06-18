@@ -1,0 +1,727 @@
+@charset "UTF-8";
+/* Variables, typography, colors etc. */
+.montserrat {
+  font-family: "Montserrat", Helvetica, "Gill Sans", Calibri, Arial, sans-serif; }
+
+.fjallaone {
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif; }
+
+/* Created by András Gulácsi https://github.com/SalsaBoy990 */
+body,
+html {
+  color: #000;
+  background: #fff;
+  font-size: 18px;
+  font-family: "Montserrat", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  line-height: 30px;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: left; }
+
+body,
+p,
+blockquote,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-weight: 700 !important;
+  color: #000;
+  margin: 0;
+  line-height: 1.0; }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: underline;
+  font-weight: 700; }
+
+h1,
+.h1 {
+  font-size: 4rem;
+  margin-top: 0; }
+
+h2,
+.h2 {
+  font-size: 2rem; }
+
+p {
+  font-family: "Montserrat", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+ol,
+ul {
+  margin-top: 0;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  font-size: 1rem; }
+
+.no-bullets {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 30px; }
+
+input {
+  height: 60px; }
+
+blockquote {
+  font-style: italic;
+  font-family: "Montserrat", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+/* Clearfix hack to clear the floats */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.align-center {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+/* FONT STYLES */
+.italic {
+  font-style: italic; }
+
+.extra-light {
+  font-weight: 200 !important; }
+
+.light {
+  font-weight: 300 !important; }
+
+.normal {
+  font-weight: 400 !important; }
+
+.bold-500 {
+  font-weight: 500 !important; }
+
+.bold-600 {
+  font-weight: 600 !important; }
+
+.bold-700 {
+  font-weight: 700 !important; }
+
+.bold-800 {
+  font-weight: 800 !important; }
+
+.black-900 {
+  font-weight: 900 !important; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.underline {
+  text-decoration: underline; }
+
+.no-underline {
+  text-decoration: none !important; }
+
+.line-through {
+  text-decoration: line-through; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.inline {
+  display: inline; }
+
+.inline-block {
+  display: inline-block !important; }
+
+.block {
+  display: block; }
+
+.hidden {
+  display: none; }
+
+table {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+
+table,
+th,
+td {
+  border: none; }
+
+figcaption {
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  margin-bottom: 60px;
+  font-style: italic;
+  margin-left: 0;
+  text-align: center; }
+
+figure img {
+  margin-top: 60px; }
+
+caption {
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  margin: 0;
+  font-style: italic;
+  text-align: center; }
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
+iframe {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+th,
+td {
+  /*border: 1px solid #E1E3E4;*/
+  padding: 0.25rem 0.5rem; }
+
+tr:nth-child(even) {
+  background: rgba(225, 227, 228, 0.3); }
+
+hr {
+  margin: 0; }
+
+/* Header, hero section */
+.container-max-width {
+  max-width: 1920px; }
+
+.hero-size {
+  min-height: 977px;
+  max-width: 1920px; }
+
+.hero-bg {
+  background: url("hero-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.logo {
+  margin-left: 65px;
+  margin-top: 55px; }
+
+.header-grid {
+  display: grid;
+  grid-template-rows: repeat(1, 131px);
+  grid-template-columns: 327px 1077px 1fr; }
+
+li.page_item > a {
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff !important; }
+
+.menu > ul li:last-child {
+  margin-right: 0px !important; }
+
+.page_item {
+  margin-right: 50px; }
+
+#site-navigation ul {
+  margin-top: 55px;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none; }
+
+#site-navigation li {
+  display: inline; }
+
+header form[role="search"] {
+  display: inline; }
+
+.sidebar {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 119px;
+  height: 973px; }
+
+h3.sidebar-text {
+  position: relative;
+  top: 450px;
+  left: -122px;
+  right: 41px;
+  width: 370px;
+  height: 38px;
+  margin-left: 0;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+  transform: rotate(-90deg); }
+
+.header-btn-main {
+  background: #ffffff;
+  width: 300px;
+  height: 50px;
+  line-height: 18px;
+  color: #00b89e;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 14.6px;
+  padding-bottom: 12.2px;
+  padding-left: 47.4px;
+  padding-right: 47.4px; }
+
+.header-btn-secondary {
+  background: transparent;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  height: 50px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 12.6px;
+  padding-bottom: 10.2px;
+  padding-left: 78.1px;
+  padding-right: 78.1px; }
+
+.indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%; }
+
+.indicator.active {
+  background: #fff; }
+
+.indicator-container span.indicator {
+  margin-right: 15px; }
+
+.indicator-container span:last-child {
+  margin-right: 0; }
+
+.indicator-container {
+  position: absolute;
+  left: 53px;
+  bottom: 34px; }
+
+.search-icon {
+  margin-top: 53px;
+  margin-left: 52px; }
+
+.search-icon-adjust {
+  position: relative;
+  top: 4px; }
+
+.pos-relative {
+  position: relative; }
+
+.marginx-auto {
+  margin: 0 auto; }
+
+.sidebar-shoe {
+  position: absolute;
+  top: 37px;
+  left: 36px;
+  right: 37px; }
+
+.sidebar-arrow {
+  position: absolute;
+  bottom: 48px;
+  left: 46px;
+  right: 48px; }
+
+.side-collapse-heading {
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 54px;
+  margin-left: 17px; }
+
+.side-collapse-description {
+  font-family: 'Montserrat', Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  text-align: center;
+  color: #000000;
+  margin-top: 28px;
+  margin-bottom: 41px;
+  width: 521px; }
+
+.side-collapse-nav {
+  margin-bottom: 83px; }
+
+form.side {
+  margin-left: 18px; }
+
+form.side > input {
+  width: 582px;
+  height: 60px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  margin-bottom: 14px; }
+
+form.side > input[type="button"] {
+  float: left;
+  border: none;
+  width: 300px;
+  margin-left: 170px;
+  height: 50px;
+  margin-top: 49px;
+  background: #16b5ef;
+  border-radius: 5px;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.side-close {
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000; }
+
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::placeholder {
+  padding-left: 24px; }
+
+.input-row {
+  padding-left: 24px; }
+
+::-webkit-input-placeholder {
+  font-size: 18px;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 24px; }
+
+:-moz-placeholder {
+  /* older Firefox*/
+  font-size: 18px;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 24px; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 18px;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 24px; }
+
+:-ms-input-placeholder {
+  font-size: 18px;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 24px; }
+
+.collapse-form {
+  margin-left: 119px;
+  margin-top: -66px;
+  display: none;
+  left: 119px;
+  width: 713px;
+  height: 977px;
+  background: #fff; }
+
+.collapse-form-hide {
+  display: none; }
+
+/* Global styles, margins, paddings */
+.ml15px {
+  margin-left: 15px; }
+
+.mr15px {
+  margin-right: 15px; }
+
+.mr24px {
+  margin-right: 24px; }
+
+.mr30px {
+  margin-right: 30px; }
+
+.mr100 {
+  margin-right: 100px; }
+
+.mr120px {
+  margin-right: 120px; }
+
+.mt-minus88 {
+  margin-top: -88px; }
+
+.mt109 {
+  margin-top: 109px; }
+
+.pt55px {
+  padding-top: 55px; }
+
+.pb200px {
+  padding-bottom: 200px; }
+
+.site-title {
+  margin-top: 186px;
+  font-family: "Montserrat", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 88px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); }
+
+.t-shadow-dark {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); }
+
+.site-title-description {
+  font-family: "Montserrat", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.22222rem;
+  line-height: 27px;
+  /* identical to box height */
+  color: #fff; }
+
+.sub-title {
+  font-family: "Montserrat", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 44px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); }
+
+.bg-light {
+  height: 1364px;
+  background: url("bg-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -88px;
+  margin-bottom: 105px; }
+
+.the-story {
+  font-family: "Montserrat", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 250px;
+  margin-top: 24px; }
+
+.big-number {
+  font-family: "Montserrat", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 183px;
+  /* identical to box height */
+  color: #e3e3e3;
+  margin-right: 20px; }
+
+.big-number-hr {
+  text-align: center;
+  margin: 0 auto;
+  height: 8px;
+  width: 196px;
+  background: #9116f0; }
+
+.big-number-container {
+  margin-top: 111px;
+  margin-bottom: 88px; }
+
+.btn-black {
+  background: #000;
+  width: 300px;
+  height: 50px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 14.6px;
+  padding-bottom: 12.2px;
+  padding-left: 114.925px;
+  padding-right: 114.925px; }
+
+.btn-purple {
+  background: #9116F0;
+  width: 300px;
+  height: 50px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 14.6px;
+  padding-bottom: 12.2px;
+  padding-left: 67.7px;
+  padding-right: 67.7px; }
+
+.btn-black-side-insta {
+  background: #fff;
+  width: 222px;
+  height: 50px;
+  line-height: 18px;
+  color: #000;
+  border: 2px solid #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 14.6px;
+  padding-bottom: 12.2px;
+  padding-left: 13.118px;
+  padding-right: 13.118px; }
+
+.btn-black-side-face {
+  background: #fff;
+  width: 222px;
+  height: 50px;
+  line-height: 18px;
+  color: #000;
+  border: 2px solid #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 14.6px;
+  padding-bottom: 12.2px;
+  padding-left: 18.7px;
+  padding-right: 18.7px; }
+
+.check-sneaker-grid {
+  margin-top: 31px;
+  display: grid;
+  grid-template-rows: repeat(1, 481px);
+  grid-template-columns: 1fr 968px;
+  justify-items: center;
+  align-items: center; }
+
+.check-sneaker-text {
+  width: 521px;
+  margin-bottom: 100px; }
+
+.be-visible-grid {
+  display: grid;
+  grid-template-rows: repeat(1, 481px);
+  grid-template-columns: 1fr 968px;
+  justify-items: center; }
+
+.be-visible-text {
+  width: 521px;
+  margin-bottom: 74px; }
+
+.brands-grid {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 87px;
+  display: grid;
+  grid-template-columns: 1fr 82px 157px 113px 179px 1fr;
+  grid-gap: 100px;
+  align-items: end; }

@@ -1,0 +1,41 @@
+/* Variables, typography, colors etc. */
+
+$base-size:  18px;
+$base-line: 30px;
+
+@function margin-size($n) {
+  @return $base-line*$n;
+}
+
+
+// relative to base-size (18px)
+$h1-size:       4rem; // 72 px
+$h2-size:       2rem; // 36 px
+$hero-sub:      1.222222222rem; // 22px
+$nav-link-size: 0.888888888rem; // 16 px
+$btn-text:      1rem;
+
+
+// Color Variables
+$black-heading:   #000;
+$black-body:      #000;
+$light-bg:        #E5E5E5;
+$dark-bg:         rgba(0, 0, 0, 0.8);
+$white:           #fff;
+
+$link-color:      #fff;
+$link-hover:      #fff;
+
+$purple:          #9116F0;
+$green:           #00B89E;
+$blue:            #16B5EF;
+
+$montserrat: 'Montserrat', Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+$fjallaone:  'Fjalla One', Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+
+.montserrat {
+  font-family: $montserrat;
+}
+.fjallaone {
+  font-family: $fjallaone;
+}

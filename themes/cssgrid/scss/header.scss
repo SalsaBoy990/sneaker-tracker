@@ -1,0 +1,327 @@
+/* Header, hero section */
+.container-max-width {
+  max-width: 1920px;
+}
+
+.hero-size {
+  min-height: 977px;
+  max-width: 1920px;
+}
+.hero-bg {
+  background: url("hero-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin-left: 65px;
+  margin-top: 55px;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-rows: repeat(1, 131px);
+  grid-template-columns: 327px 1077px 1fr;
+}
+
+li.page_item > a {
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff !important;
+}
+.menu > ul li:last-child {
+  margin-right: 0px !important;
+}
+.page_item {
+  margin-right: 50px;
+}
+
+#site-navigation ul {
+  margin-top: 55px;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+#site-navigation li {
+  display: inline;
+}
+
+header form[role="search"] {
+  display: inline;
+}
+
+.sidebar {
+  background: $dark-bg;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 119px;
+  height: 973px;
+}
+
+h3.sidebar-text {
+  position: relative;
+  // top: 50% !important;
+  top: 450px;
+  left: -122px;
+  right: 41px;
+  width: 370px;
+  height: 38px;
+  margin-left: 0;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+  transform: rotate(-90deg);
+}
+
+.header-btn-main {
+  background: #ffffff;
+  width: 300px;
+  height: 50px;
+  line-height: 18px;
+  color: #00b89e;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 14.6px;
+  padding-bottom: 12.2px;
+  padding-left: 47.4px;
+  padding-right: 47.4px;
+}
+
+.header-btn-secondary {
+  background: transparent;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  height: 50px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 12.6px;
+  padding-bottom: 10.2px;
+  padding-left: 78.1px;
+  padding-right: 78.1px;
+}
+
+.indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.indicator.active {
+  background: #fff;
+}
+
+.indicator-container span.indicator {
+  margin-right: 15px;
+}
+
+.indicator-container span:last-child {
+  margin-right: 0;
+}
+
+.indicator-container {
+  position: absolute;
+  left: 53px;
+  bottom: 34px;
+}
+
+.search-icon {
+  margin-top: 53px;
+  margin-left: 52px;
+}
+
+.search-icon-adjust {
+  position: relative;
+  top: 4px;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.marginx-auto {
+  margin: 0 auto;
+}
+
+.sidebar-shoe {
+  position: absolute;
+  top: 37px;
+  left: 36px;
+  right: 37px;
+}
+
+.sidebar-arrow {
+  position: absolute;
+  bottom: 48px;
+  left: 46px;
+  right: 48px;
+}
+
+.side-collapse-heading {
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 54px;
+  margin-left: 17px;
+}
+
+.side-collapse-description {
+  font-family: 'Montserrat', Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  text-align: center;
+  color: #000000;
+  margin-top: 28px;
+  margin-bottom: 41px;
+  width: 521px;
+}
+
+.side-collapse-nav {
+  margin-bottom: 83px;
+}
+
+form.side {
+  margin-left: 18px;
+}
+
+form.side > input {
+  width: 582px;
+  height: 60px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+}
+form.side > input[type="button"] {
+  float: left;
+  border: none;
+  width: 300px;
+  margin-left: 170px;
+  height: 50px;
+  margin-top: 49px;
+  background: #16b5ef;
+  border-radius: 5px;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.side-close {
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::placeholder {
+  padding-left: 24px;
+}
+
+.input-row {
+  padding-left: 24px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 18px;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 24px;
+}
+:-moz-placeholder {
+  /* older Firefox*/
+  font-size: 18px;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 24px;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 18px;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 24px;
+}
+:-ms-input-placeholder {
+  font-size: 18px;
+  font-family: "Fjalla One", Helvetica, "Gill Sans", Calibri, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 24px;
+}
+
+.collapse-form {
+  
+  margin-left: 119px;
+  margin-top: -66px;
+  display: none;
+  left: 119px;
+  width: 713px;
+  height: 977px;
+  background: #fff;
+}
+
+.collapse-form-hide {
+  display: none;
+}
